@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_rule"
+            android:icon="@drawable/ic_rule"
+            android:title="@string/peraturan" />
+        <item
+            android:id="@+id/nav_expiration"
+            android:icon="@drawable/ic_outline_access_time_24"
+            android:title="@string/jatuh_tempo" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_whatsapp"
+            android:title="@string/ibu_kos" />
+    </group>
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.expiration.ExpirationFragment"
+    android:background="@color/gray"
+    >
+
+    <CalendarView
+        android:id="@+id/calv_expiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/calv_expiration"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Masuk Kos"
+        android:textSize="16sp"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/ic_baseline_circle_24"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/calv_expiration"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="1 January"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_in"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Keluar Kos"
+        android:textSize="16sp"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/ic_baseline_circle_24"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_in"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="1 February"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
