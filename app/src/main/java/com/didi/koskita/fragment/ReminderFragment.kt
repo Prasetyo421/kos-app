@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.didi.koskita.R
 import com.didi.koskita.adapter.ReminderAdapter
 import com.didi.koskita.databinding.FragmentReminderBinding
 
@@ -15,8 +14,8 @@ import com.didi.koskita.databinding.FragmentReminderBinding
 class ReminderFragment : Fragment() {
     private var _binding: FragmentReminderBinding? = null
     private val binding get() = _binding as FragmentReminderBinding
-    lateinit var reminderAdapter: ReminderAdapter
-    lateinit private var listItem: List<String>
+    private lateinit var reminderAdapter: ReminderAdapter
+    private lateinit var listItem: List<String>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -33,16 +32,6 @@ class ReminderFragment : Fragment() {
         binding.rvReminder.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
         binding.rvReminder.setHasFixedSize(true)
         binding.rvReminder.adapter = reminderAdapter
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-//        arguments?.let {
-//            param1 = it.getString(ARG_PARAM1)
-//            param2 = it.getString(ARG_PARAM2)
-//        }
-
-
     }
 
     override fun onCreateView(

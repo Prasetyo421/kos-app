@@ -9,10 +9,8 @@ import timber.log.Timber
 class ReminderAdapter(private val listItem: List<String>): RecyclerView.Adapter<ReminderAdapter.ViewHolder>() {
     inner class ViewHolder(private val binding: ReminderItemBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(name: String){
-            with(binding){
-                tvName.text = name
-                Timber.i(name)
-            }
+            binding.tvName.text = name
+            Timber.i(name)
         }
     }
 

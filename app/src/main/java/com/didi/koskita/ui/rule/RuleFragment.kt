@@ -4,9 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.didi.koskita.adapter.RuleAdapter
@@ -16,8 +14,8 @@ class RuleFragment : Fragment() {
 
     private lateinit var slideshowViewModel: RuleViewModel
     private var _binding: FragmentRuleBinding? = null
-    lateinit var adapterRule: RuleAdapter
-    lateinit var listItem: List<String>
+    private lateinit var adapterRule: RuleAdapter
+    private lateinit var listItem: List<String>
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -29,7 +27,7 @@ class RuleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         slideshowViewModel =
-            ViewModelProvider(this).get(RuleViewModel::class.java)
+            ViewModelProvider(this)[RuleViewModel::class.java]
 
         _binding = FragmentRuleBinding.inflate(inflater, container, false)
         val root: View = binding.root

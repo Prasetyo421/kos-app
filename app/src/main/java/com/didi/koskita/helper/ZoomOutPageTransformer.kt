@@ -2,6 +2,7 @@ package com.didi.koskita.helper
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2
+import java.lang.Math.max
 
 private const val MIN_SCALE = 0.85f
 private const val MIN_ALPHA = 0.5f
@@ -17,7 +18,7 @@ class ZoomOutPageTransformer : ViewPager2.PageTransformer {
                     alpha = 0f
                 }
                 position <= 1 -> {
-                    val scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position))
+                    val scaleFactor = kotlin.math.max(MIN_SCALE, 1 - Math.abs(position))
                     val vertMargin = pageHeight * (1 - scaleFactor) / 2
                     val horzMargin = pageWidth * (1 - scaleFactor) / 2
                     translationX = if (position < 0) {

@@ -7,7 +7,7 @@
     tools:context=".ui.profile.ProfileFragment"
     android:paddingHorizontal="30dp"
     android:paddingTop="24dp"
-    android:background="@color/gray"
+    style="@style/MyBackgrounApp"
     >
 
     <androidx.appcompat.widget.AppCompatTextView

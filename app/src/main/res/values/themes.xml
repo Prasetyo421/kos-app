@@ -14,9 +14,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.KosKita.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="MyBackgrounApp" parent="Theme.KosKita">
+        <item name="background">@color/gray</item>
     </style>
 
     <style name="Theme.KosKita.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -44,13 +43,6 @@
         <item name="itemIconTint">@color/white</item>
     </style>
 
-    <style name="RoundedBottomImageview" parent="">
-        <item name="cornerFamilyBottomLeft">rounded</item>
-        <item name="cornerSizeBottomLeft">50%</item>
-        <item name="cornerFamilyBottomRight">rounded</item>
-        <item name="cornerSizeBottomRight">50%</item>
-    </style>
-
     <style name="Border20dp" parent="">
         <item name="cornerFamilyBottomLeft">rounded</item>
         <item name="cornerSizeBottomLeft">20dp</item>
@@ -60,12 +52,5 @@
         <item name="cornerSizeBottomRight">20dp</item>
         <item name="cornerFamilyTopRight">rounded</item>
         <item name="cornerSizeTopRight">20dp</item>
-    </style>
-
-    <style name="Rounded1ShapeableImageview" parent="">
-        <item name="cornerFamilyTopRight">rounded</item>
-        <item name="cornerSizeTopRight">50%</item>
-        <item name="cornerFamilyBottomLeft">rounded</item>
-        <item name="cornerSizeBottomLeft">50%</item>
     </style>
 </resources>
