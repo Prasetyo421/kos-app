@@ -1,6 +1,10 @@
 package com.didi.koskita
 
 import android.os.Bundle
+import android.view.MenuItem
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -36,8 +40,29 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+        navView.menu.findItem(R.id.nav_contact).setOnMenuItemClickListener(object: MenuItem.OnMenuItemClickListener{
+            override fun onMenuItemClick(p0: MenuItem?): Boolean {
+                Toast.makeText(this@MainActivity, "Click: WhatsApp", Toast.LENGTH_SHORT).show()
+                return true
+            }
+        })
+
+        binding.tvSignOut.setOnClickListener {
+            Toast.makeText(this@MainActivity, "Click: Sign Out", Toast.LENGTH_SHORT).show()
+        }
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu_icon)
+
+//        val crashButton = Button(this)
+//        crashButton.text = "Test Crash"
+//        crashButton.setOnClickListener {
+//            throw RuntimeException("Test Crash") // Force a crash
+//        }
+//
+//        addContentView(crashButton, ViewGroup.LayoutParams(
+//            ViewGroup.LayoutParams.MATCH_PARENT,
+//            ViewGroup.LayoutParams.WRAP_CONTENT))
 
     }
 
