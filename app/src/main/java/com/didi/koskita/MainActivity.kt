@@ -1,9 +1,6 @@
 package com.didi.koskita
 
 import android.os.Bundle
-import android.view.MenuItem
-import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -40,12 +37,10 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        navView.menu.findItem(R.id.nav_contact).setOnMenuItemClickListener(object: MenuItem.OnMenuItemClickListener{
-            override fun onMenuItemClick(p0: MenuItem?): Boolean {
-                Toast.makeText(this@MainActivity, "Click: WhatsApp", Toast.LENGTH_SHORT).show()
-                return true
-            }
-        })
+        navView.menu.findItem(R.id.nav_contact).setOnMenuItemClickListener {
+            Toast.makeText(this@MainActivity, "Click: WhatsApp", Toast.LENGTH_SHORT).show()
+            true
+        }
 
         binding.tvSignOut.setOnClickListener {
             Toast.makeText(this@MainActivity, "Click: Sign Out", Toast.LENGTH_SHORT).show()
@@ -70,4 +65,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
 }
