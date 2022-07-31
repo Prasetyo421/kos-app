@@ -1,4 +1,4 @@
-package com.didi.koskita.ui.home
+package com.didi.koskita.presentation.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,9 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.didi.koskita.R
-import com.didi.koskita.adapter.SectionsPagerHomeAdapter
 import com.didi.koskita.databinding.FragmentHomeBinding
-import com.didi.koskita.helper.ZoomOutPageTransformer
+import com.didi.koskita.util.ZoomOutPageTransformer
 import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment : Fragment() {

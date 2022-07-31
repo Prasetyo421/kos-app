@@ -1,4 +1,4 @@
-package com.didi.koskita.ui.expiration
+package com.didi.koskita.presentation.expiration
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,9 +1,9 @@
-package com.didi.koskita.adapter
+package com.didi.koskita.presentation.home
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.didi.koskita.fragment.ReminderFragment
-import com.didi.koskita.ui.rule.RuleFragment
+import com.didi.koskita.presentation.reminder.ReminderFragment
+import com.didi.koskita.presentation.rule.RuleFragment
 
 class SectionsPagerHomeAdapter(fragment: Fragment): FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int = 2

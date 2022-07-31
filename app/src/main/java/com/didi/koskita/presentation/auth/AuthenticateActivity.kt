@@ -1,4 +1,4 @@
-package com.didi.koskita.activity
+package com.didi.koskita.presentation.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,9 +7,8 @@ import androidx.annotation.StringRes
 import androidx.viewpager2.widget.ViewPager2
 import com.didi.koskita.MainActivity
 import com.didi.koskita.R
-import com.didi.koskita.adapter.SectionsPagerAuthAdapter
 import com.didi.koskita.databinding.ActivityAuthenticateBinding
-import com.didi.koskita.helper.ZoomOutPageTransformer
+import com.didi.koskita.util.ZoomOutPageTransformer
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.google.android.material.tabs.TabLayoutMediator

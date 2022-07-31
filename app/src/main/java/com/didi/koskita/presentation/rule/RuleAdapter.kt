@@ -1,4 +1,4 @@
-package com.didi.koskita.adapter
+package com.didi.koskita.presentation.rule
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -15,12 +15,12 @@ class RuleAdapter(private val listItem: List<String>): RecyclerView.Adapter<Rule
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RuleAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = RuleItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: RuleAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(listItem[position])
     }
 

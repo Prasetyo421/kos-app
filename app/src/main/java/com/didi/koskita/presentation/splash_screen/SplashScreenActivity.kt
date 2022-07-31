@@ -1,9 +1,10 @@
-package com.didi.koskita.activity
+package com.didi.koskita.presentation.splash_screen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.didi.koskita.presentation.auth.AuthenticateActivity
 import com.didi.koskita.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
