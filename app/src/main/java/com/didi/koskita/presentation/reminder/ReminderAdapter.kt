@@ -1,4 +1,4 @@
-package com.didi.koskita.adapter
+package com.didi.koskita.presentation.reminder
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -14,12 +14,12 @@ class ReminderAdapter(private val listItem: List<String>): RecyclerView.Adapter<
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReminderAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ReminderItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ReminderAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(listItem[position])
     }
 

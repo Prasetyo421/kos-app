@@ -8,25 +8,25 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.didi.koskita.ui.home.HomeFragment"
+        android:name="com.didi.koskita.presentation.home.HomeFragment"
         android:label=" "
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.didi.koskita.ui.profile.ProfileFragment"
+        android:name="com.didi.koskita.presentation.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/nav_rule"
-        android:name="com.didi.koskita.ui.rule.RuleFragment"
+        android:name="com.didi.koskita.presentation.rule.RuleFragment"
         android:label="@string/peraturan"
         tools:layout="@layout/fragment_rule" />
 
     <fragment
         android:id="@+id/nav_expiration"
-        android:name="com.didi.koskita.ui.expiration.ExpirationFragment"
+        android:name="com.didi.koskita.presentation.expiration.ExpirationFragment"
         android:label="Jatuh Tempo"
         tools:layout="@layout/fragment_expiration" />
 

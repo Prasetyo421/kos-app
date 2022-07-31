@@ -1,4 +1,4 @@
-package com.didi.koskita.helper
+package com.didi.koskita.util
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2

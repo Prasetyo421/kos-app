@@ -1,4 +1,4 @@
-package com.didi.koskita.fragment
+package com.didi.koskita.presentation.auth.sign_in
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

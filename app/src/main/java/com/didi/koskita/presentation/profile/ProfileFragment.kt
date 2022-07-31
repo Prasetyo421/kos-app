@@ -1,4 +1,4 @@
-package com.didi.koskita.ui.profile
+package com.didi.koskita.presentation.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
